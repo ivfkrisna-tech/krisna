@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import FloatButtons from '../components/FloatButtons'
 import useReveal from '../hooks/useReveal'
+import aboutUsImg from '../assets/images/aboutus_2img.jpg'
 
 export default function AboutUs() {
   useReveal()
@@ -24,7 +25,7 @@ export default function AboutUs() {
         <section className="section reveal" style={{ padding: 'var(--section-padding)' }}>
           <div className="why-wrapper">
             <div>
-              <img src="/img/aboutus_2img.jpg" alt="Inside Krisna IVF Center Facility" className="why-img" loading="lazy" />
+              <img src={aboutUsImg} alt="Inside Krisna IVF Center Facility" className="why-img" loading="lazy" />
             </div>
             <div className="why-content">
               <h3 style={{ color: 'var(--brand-pink)', textTransform: 'uppercase', letterSpacing: '1.5px', fontSize: '0.9rem', fontWeight: '700' }}>Who We Are</h3>

@@ -15,6 +15,18 @@ import BlogPost7 from '../data/blogContent/BlogPost7';
 import BlogPost8 from '../data/blogContent/BlogPost8';
 import BlogPost9 from '../data/blogContent/BlogPost9';
 import BlogPost10 from '../data/blogContent/BlogPost10';
+import BlogPost11 from '../data/blogContent/BlogPost11';
+import BlogPost12 from '../data/blogContent/BlogPost12';
+import BlogPost13 from '../data/blogContent/BlogPost13';
+import BlogPost14 from '../data/blogContent/BlogPost14';
+import BlogPost15 from '../data/blogContent/BlogPost15';
+import BlogPost16 from '../data/blogContent/BlogPost16';
+import BlogPost17 from '../data/blogContent/BlogPost17';
+import BlogPost18 from '../data/blogContent/BlogPost18';
+import BlogPost19 from '../data/blogContent/BlogPost19';
+import BlogPost20 from '../data/blogContent/BlogPost20';
+import BlogPost21 from '../data/blogContent/BlogPost21';
+import BlogPost22 from '../data/blogContent/BlogPost22';
 
 const contentMap = {
   'BlogPost1': BlogPost1,
@@ -27,6 +39,18 @@ const contentMap = {
   'BlogPost8': BlogPost8,
   'BlogPost9': BlogPost9,
   'BlogPost10': BlogPost10,
+  'BlogPost11': BlogPost11,
+  'BlogPost12': BlogPost12,
+  'BlogPost13': BlogPost13,
+  'BlogPost14': BlogPost14,
+  'BlogPost15': BlogPost15,
+  'BlogPost16': BlogPost16,
+  'BlogPost17': BlogPost17,
+  'BlogPost18': BlogPost18,
+  'BlogPost19': BlogPost19,
+  'BlogPost20': BlogPost20,
+  'BlogPost21': BlogPost21,
+  'BlogPost22': BlogPost22,
 };
 
 function TOC({ blog }) {

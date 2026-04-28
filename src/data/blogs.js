@@ -118,5 +118,173 @@ export const blogs = [
       { id: 'safe-threshold', title: 'Finding the “Safe Zone” (200mg)' },
       { id: 'practical-tips', title: 'Practical Tips for Reducing Caffeine' }
     ]
+  },
+  {
+    slug: 'understanding-the-ivf-process-step-by-step-guide',
+    title: 'Understanding the IVF Process: A Step-by-Step Guide to Your Fertility Journey',
+    image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800',
+    contentFile: 'BlogPost11',
+    toc: [
+      { id: 'initial-consultation', title: 'The Initial Consultation and Testing' },
+      { id: 'ovarian-stimulation', title: 'Ovarian Stimulation' },
+      { id: 'egg-retrieval', title: 'Egg Retrieval and Fertilization' },
+      { id: 'embryo-transfer', title: 'Embryo Culture and Transfer' }
+    ]
+  },
+  {
+    slug: 'icsi-vs-ivf-understanding-the-difference',
+    title: 'ICSI vs. IVF: Understanding the Difference and Which is Right for You',
+    image: '/img/icsi_4.avif',
+    contentFile: 'BlogPost12',
+    toc: [
+      { id: 'what-is-ivf', title: 'What is Traditional IVF?' },
+      { id: 'what-is-icsi', title: 'What is ICSI?' },
+      { id: 'key-differences', title: 'Key Differences Between the Procedures' },
+      { id: 'who-needs-icsi', title: 'Who Should Consider ICSI?' }
+    ]
+  },
+  {
+    slug: 'amh-levels-fertility-what-it-means',
+    title: 'The Role of AMH in Fertility: What Your Anti-Müllerian Hormone Levels Mean',
+    image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800',
+    contentFile: 'BlogPost13',
+    toc: [
+      { id: 'what-is-amh', title: 'What is AMH?' },
+      { id: 'ovarian-reserve', title: 'Understanding Ovarian Reserve' },
+      { id: 'interpreting-levels', title: 'How to Interpret Your AMH Levels' },
+      { id: 'amh-and-ivf', title: 'How AMH Impacts Your IVF Cycle' }
+    ]
+  },
+  {
+    slug: 'understanding-egg-freezing-fertility-preservation',
+    title: 'Understanding Egg Freezing: Preserving Your Fertility for the Future',
+    image: '/img/ff1.avif',
+    contentFile: 'BlogPost14',
+    toc: [
+      { id: 'why-freeze-eggs', title: 'Why Choose Egg Freezing?' },
+      { id: 'best-age', title: 'The Optimal Age for Egg Freezing' },
+      { id: 'the-process', title: 'The Egg Freezing Process' },
+      { id: 'success-rates', title: 'Success Rates and Future Use' }
+    ]
+  },
+  {
+    slug: 'secondary-infertility-causes-and-treatments',
+    title: 'Secondary Infertility: Why Getting Pregnant the Second Time Can Be Hard',
+    image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800',
+    contentFile: 'BlogPost15',
+    toc: [
+      { id: 'what-is-secondary-infertility', title: 'Defining Secondary Infertility' },
+      { id: 'common-causes', title: 'Common Causes of Secondary Infertility' },
+      { id: 'when-to-seek-help', title: 'When Should You See a Specialist?' },
+      { id: 'treatment-options', title: 'Treatment Options Available' }
+    ]
+  },
+  {
+    slug: 'endometrial-thickness-ivf-success',
+    title: 'The Importance of Endometrial Thickness in IVF Success',
+    image: 'https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?w=800',
+    contentFile: 'BlogPost16',
+    toc: [
+      { id: 'the-endometrium', title: 'What is the Endometrium?' },
+      { id: 'ideal-thickness', title: 'What is the Ideal Thickness for Implantation?' },
+      { id: 'causes-of-thin-lining', title: 'Causes of a Thin Uterine Lining' },
+      { id: 'how-to-improve', title: 'Medical Strategies to Improve Thickness' }
+    ]
+  },
+  {
+    slug: 'acupuncture-and-ivf-complementary-therapies',
+    title: 'Acupuncture and IVF: Complementary Therapies for Fertility',
+    image: '/img/ff2.avif',
+    contentFile: 'BlogPost17',
+    toc: [
+      { id: 'what-is-acupuncture', title: 'Understanding Acupuncture' },
+      { id: 'benefits-for-fertility', title: 'Benefits of Acupuncture for Fertility' },
+      { id: 'timing-with-ivf', title: 'Timing Acupuncture with Your IVF Cycle' },
+      { id: 'reducing-stress', title: 'Stress Reduction and Overall Wellness' }
+    ]
+  },
+  {
+    slug: 'the-two-week-wait-managing-stress',
+    title: 'Understanding the Two-Week Wait: Tips for Managing Stress After Embryo Transfer',
+    image: '/img/ff3.avif',
+    contentFile: 'BlogPost18',
+    toc: [
+      { id: 'what-is-the-tww', title: 'What is the Two-Week Wait?' },
+      { id: 'physical-symptoms', title: 'Common Physical Symptoms' },
+      { id: 'managing-anxiety', title: 'Strategies for Managing Anxiety' },
+      { id: 'when-to-test', title: 'When and How to Test' }
+    ]
+  },
+  {
+    slug: 'male-infertility-causes-and-treatments',
+    title: 'Male Infertility Explained: Causes, Diagnosis, and Treatment Options',
+    image: '/img/icse_1.avif',
+    contentFile: 'BlogPost19',
+    toc: [
+      { id: 'understanding-male-factor', title: 'Understanding Male Factor Infertility' },
+      { id: 'common-causes', title: 'Common Causes and Risk Factors' },
+      { id: 'semen-analysis', title: 'The Role of Semen Analysis' },
+      { id: 'treatment-options', title: 'Advanced Treatment Options' }
+    ]
+  },
+  {
+    slug: 'genetic-testing-in-ivf-pgta',
+    title: 'The Role of Genetic Testing in IVF (PGT-A): Is It Right for You?',
+    image: '/img/isci_5.avif',
+    contentFile: 'BlogPost20',
+    toc: [
+      { id: 'what-is-pgta', title: 'What is PGT-A?' },
+      { id: 'how-it-works', title: 'How the Testing Process Works' },
+      { id: 'who-should-consider', title: 'Who Should Consider Genetic Testing?' },
+      { id: 'benefits-and-limitations', title: 'Benefits and Limitations' }
+    ]
+  },
+  {
+    slug: 'preparing-body-for-ivf-lifestyle-diet',
+    title: 'Preparing Your Body for IVF: Lifestyle and Diet Changes for Success',
+    image: '/img/cath-lab-machine.jpg',
+    contentFile: 'BlogPost21',
+    toc: [
+      { id: 'nutrition-and-fertility', title: 'Nutrition and Its Impact on Fertility' },
+      { id: 'supplements-to-consider', title: 'Key Supplements to Consider' },
+      { id: 'exercise-and-ivf', title: 'Safe Exercise During IVF' },
+      { id: 'environmental-toxins', title: 'Reducing Exposure to Toxins' }
+    ]
+  },
+  {
+    slug: 'navigating-recurrent-pregnancy-loss',
+    title: 'Navigating Recurrent Pregnancy Loss: Finding Hope and Solutions',
+    image: '/img/Philips-Allura-Xper-FD10-Cath-Lab..jpg',
+    contentFile: 'BlogPost22',
+    toc: [
+      { id: 'defining-rpl', title: 'Defining Recurrent Pregnancy Loss' },
+      { id: 'potential-causes', title: 'Investigating Potential Causes' },
+      { id: 'diagnostic-testing', title: 'Essential Diagnostic Testing' },
+      { id: 'pathways-to-success', title: 'Pathways to a Successful Pregnancy' }
+    ]
+  },
+  {
+    slug: 'thyroid-health-and-fertility',
+    title: 'The Connection Between Thyroid Health and Fertility',
+    image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800',
+    contentFile: 'BlogPost23',
+    toc: [
+      { id: 'what-is-the-thyroid', title: 'Understanding the Thyroid Gland' },
+      { id: 'hypothyroidism', title: 'Hypothyroidism and Ovulation' },
+      { id: 'hyperthyroidism', title: 'Hyperthyroidism and Pregnancy Risks' },
+      { id: 'testing-and-treatment', title: 'Testing and Managing Thyroid Levels' }
+    ]
+  },
+  {
+    slug: 'role-of-progesterone-early-pregnancy',
+    title: 'Understanding the Role of Progesterone in Early Pregnancy',
+    image: 'https://images.unsplash.com/photo-1581595219315-a187dd40c322?w=800',
+    contentFile: 'BlogPost24',
+    toc: [
+      { id: 'what-is-progesterone', title: 'What is Progesterone?' },
+      { id: 'preparing-the-uterus', title: 'Preparing the Uterus for Implantation' },
+      { id: 'progesterone-in-ivf', title: 'Why Progesterone Supplementation is Needed in IVF' },
+      { id: 'how-long-to-take', title: 'How Long Should You Take It?' }
+    ]
   }
 ];
