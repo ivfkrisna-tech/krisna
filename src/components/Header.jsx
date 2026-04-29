@@ -42,7 +42,7 @@ export default function Header() {
           <Link to="/success">Success Stories</Link>
           <Link to="/blog">Blogs</Link>
           <Link to="/contact">Contact</Link>
-          <a href="https://crm-ebon-two.vercel.app/login" className="btn-primary" style={{ padding: '10px 25px', borderRadius: '8px', color: '#fff' }}>Login</a>
+          <a href="https://admin.krisnaivfgroup5.com/login" className="btn-primary" style={{ padding: '10px 25px', borderRadius: '8px', color: '#fff' }}>Login</a>
         </nav>
 
         <div className="mobile-toggle" onClick={toggleMenu} aria-label="Open Menu">
@@ -73,7 +73,7 @@ export default function Header() {
           <Link to="/success">Success Stories</Link>
           <Link to="/blog">Blogs</Link>
           <Link to="/contact">Contact Us</Link>
-          <a href="https://crm-ebon-two.vercel.app/login" style={{ color: 'var(--brand-pink)' }}>Patient Login</a>
+          <a href="https://admin.krisnaivfgroup5.com/login" style={{ color: 'var(--brand-pink)' }}>Patient Login</a>
         </div>
       </div>
     </>
