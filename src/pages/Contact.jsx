@@ -1,4 +1,6 @@
+import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import emailjs from '@emailjs/browser'
 import '../styles/contact.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -7,6 +9,30 @@ import useReveal from '../hooks/useReveal'
 
 export default function Contact() {
   useReveal()
+  const form = useRef();
+  const [status, setStatus] = useState('');
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setStatus('sending');
+
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      form.current, 
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+      .then((result) => {
+          console.log(result.text);
+          setStatus('success');
+          form.current.reset();
+          setTimeout(() => setStatus(''), 5000);
+      }, (error) => {
+          console.log(error.text);
+          setStatus('error');
+          setTimeout(() => setStatus(''), 5000);
+      });
+  };
   return (
     <>
       <Header />
@@ -32,7 +58,7 @@ export default function Contact() {
             <div className="contact-card">
               <div className="contact-icon"><i className="fa-solid fa-envelope"></i></div>
               <h3>Email Us</h3>
-              <p style={{ marginBottom: '5px', fontWeight: '500' }}>teamkrisnaivf@gmail.com</p>
+              <p style={{ marginBottom: '5px', fontWeight: '500' }}>ivfkrisna@gmail.com</p>
               <p style={{ color: '#888', fontSize: '0.9rem' }}>24/7 Online Support</p>
             </div>
             <div className="contact-card">
@@ -49,17 +75,17 @@ export default function Contact() {
             <div className="contact-form-box">
               <h2 style={{ fontSize: '1.8rem', marginBottom: '10px' }}>Send us a Message</h2>
               <p style={{ marginBottom: '30px', fontSize: '0.95rem', color: '#666' }}>Fill out the form below and we will get back to you within 24 hours.</p>
-              <form action="#">
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="form-row">
-                  <input type="text" placeholder="First Name" required aria-label="First Name" />
-                  <input type="text" placeholder="Last Name" required aria-label="Last Name" />
+                  <input type="text" name="first_name" placeholder="First Name" required aria-label="First Name" />
+                  <input type="text" name="last_name" placeholder="Last Name" required aria-label="Last Name" />
                 </div>
                 <div className="form-row">
-                  <input type="tel" placeholder="Phone Number" required aria-label="Phone Number" />
-                  <input type="email" placeholder="Email Address" required aria-label="Email Address" />
+                  <input type="tel" name="phone_number" placeholder="Phone Number" required aria-label="Phone Number" />
+                  <input type="email" name="email_address" placeholder="Email Address" required aria-label="Email Address" />
                 </div>
                 <div className="form-group">
-                  <select aria-label="Service Interest">
+                  <select name="service_interest" aria-label="Service Interest">
                     <option disabled defaultValue="">Select Treatment / Inquiry</option>
                     <option>General Enquiry</option>
                     <option>IVF Treatment</option>
@@ -70,9 +96,13 @@ export default function Contact() {
                   </select>
                 </div>
                 <div className="form-group">
-                  <textarea rows="5" placeholder="How can we help you today?" aria-label="Message"></textarea>
+                  <textarea name="message" rows="5" placeholder="How can we help you today?" aria-label="Message"></textarea>
                 </div>
-                <button type="submit" className="btn-primary" style={{ width: '100%' }}>Submit Message</button>
+                <button type="submit" className="btn-primary" style={{ width: '100%' }} disabled={status === 'sending'}>
+                  {status === 'sending' ? 'Sending...' : 'Submit Message'}
+                </button>
+                {status === 'success' && <p style={{ color: 'green', marginTop: '10px', textAlign: 'center' }}>Message sent successfully!</p>}
+                {status === 'error' && <p style={{ color: 'red', marginTop: '10px', textAlign: 'center' }}>Failed to send message. Please try again.</p>}
               </form>
             </div>
 
@@ -91,7 +121,7 @@ export default function Contact() {
               </div>
               <iframe
                 className="map-frame"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.734563857321!2d75.80521131504495!3d26.89270498313404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db678913364df%3A0x6b77242490538058!2sKrisna%20IVF%20Center!5e0!3m2!1sen!2sin!4v1675123456789!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45697.17536455977!2d75.79125928984217!3d26.86695488585173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db70f595bc337%3A0x7f3f2bf56bc36002!2sHouse%20Of%20Doctor&#39;s!5e0!3m2!1sen!2sin!4v1777449901071!5m2!1sen!2sin"
                 allowFullScreen=""
                 loading="lazy"
                 title="Google Map Location of Krisna IVF Center"

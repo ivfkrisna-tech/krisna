@@ -27,6 +27,8 @@ import BlogPost19 from '../data/blogContent/BlogPost19';
 import BlogPost20 from '../data/blogContent/BlogPost20';
 import BlogPost21 from '../data/blogContent/BlogPost21';
 import BlogPost22 from '../data/blogContent/BlogPost22';
+import BlogPost23 from '../data/blogContent/BlogPost23';
+import BlogPost24 from '../data/blogContent/BlogPost24';
 
 const contentMap = {
   'BlogPost1': BlogPost1,
@@ -51,6 +53,8 @@ const contentMap = {
   'BlogPost20': BlogPost20,
   'BlogPost21': BlogPost21,
   'BlogPost22': BlogPost22,
+  'BlogPost23': BlogPost23,
+  'BlogPost24': BlogPost24,
 };
 
 function TOC({ blog }) {

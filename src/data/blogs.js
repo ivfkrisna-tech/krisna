@@ -263,28 +263,28 @@ export const blogs = [
       { id: 'pathways-to-success', title: 'Pathways to a Successful Pregnancy' }
     ]
   },
-  // {
-  //   slug: 'thyroid-health-and-fertility',
-  //   title: 'The Connection Between Thyroid Health and Fertility',
-  //   image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800',
-  //   contentFile: 'BlogPost23',
-  //   toc: [
-  //     { id: 'what-is-the-thyroid', title: 'Understanding the Thyroid Gland' },
-  //     { id: 'hypothyroidism', title: 'Hypothyroidism and Ovulation' },
-  //     { id: 'hyperthyroidism', title: 'Hyperthyroidism and Pregnancy Risks' },
-  //     { id: 'testing-and-treatment', title: 'Testing and Managing Thyroid Levels' }
-  //   ]
-  // },
-  // {
-  //   slug: 'role-of-progesterone-early-pregnancy',
-  //   title: 'Understanding the Role of Progesterone in Early Pregnancy',
-  //   image: 'https://images.unsplash.com/photo-1581595219315-a187dd40c322?w=800',
-  //   contentFile: 'BlogPost24',
-  //   toc: [
-  //     { id: 'what-is-progesterone', title: 'What is Progesterone?' },
-  //     { id: 'preparing-the-uterus', title: 'Preparing the Uterus for Implantation' },
-  //     { id: 'progesterone-in-ivf', title: 'Why Progesterone Supplementation is Needed in IVF' },
-  //     { id: 'how-long-to-take', title: 'How Long Should You Take It?' }
-  //   ]
-  // }
+  {
+    slug: 'thyroid-health-and-fertility',
+    title: 'The Connection Between Thyroid Health and Fertility',
+    image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800',
+    contentFile: 'BlogPost23',
+    toc: [
+      { id: 'what-is-the-thyroid', title: 'Understanding the Thyroid Gland' },
+      { id: 'hypothyroidism', title: 'Hypothyroidism and Ovulation' },
+      { id: 'hyperthyroidism', title: 'Hyperthyroidism and Pregnancy Risks' },
+      { id: 'testing-and-treatment', title: 'Testing and Managing Thyroid Levels' }
+    ]
+  },
+  {
+    slug: 'role-of-progesterone-early-pregnancy',
+    title: 'Understanding the Role of Progesterone in Early Pregnancy',
+    image: 'https://images.unsplash.com/photo-1581595219315-a187dd40c322?w=800',
+    contentFile: 'BlogPost24',
+    toc: [
+      { id: 'what-is-progesterone', title: 'What is Progesterone?' },
+      { id: 'preparing-the-uterus', title: 'Preparing the Uterus for Implantation' },
+      { id: 'progesterone-in-ivf', title: 'Why Progesterone Supplementation is Needed in IVF' },
+      { id: 'how-long-to-take', title: 'How Long Should You Take It?' }
+    ]
+  }
 ];

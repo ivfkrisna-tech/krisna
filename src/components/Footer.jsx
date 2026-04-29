@@ -40,7 +40,7 @@ export default function Footer() {
           <h3>Contact</h3>
           <p style={{ marginBottom: '10px' }}><i className="fa-solid fa-location-dot" style={{ color: 'var(--brand-pink)', width: '20px' }}></i> Jaipur, Rajasthan, India</p>
           <p style={{ marginBottom: '10px' }}><a href="tel:+919119115355" style={{ color: '#ccc' }}><i className="fa-solid fa-phone" style={{ color: 'var(--brand-pink)', width: '20px' }}></i> +91 911911 5355</a></p>
-          <p><a href="mailto:teamkrisnaivf@gmail.com" style={{ color: '#ccc' }}><i className="fa-solid fa-envelope" style={{ color: 'var(--brand-pink)', width: '20px' }}></i> teamkrisnaivf@gmail.com</a></p>
+          <p><a href="mailto:ivfkrisna@gmail.com" style={{ color: '#ccc' }}><i className="fa-solid fa-envelope" style={{ color: 'var(--brand-pink)', width: '20px' }}></i> ivfkrisna@gmail.com</a></p>
         </div>
       </div>
       <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', marginTop: '50px', paddingTop: '20px', textAlign: 'center', fontSize: '0.8rem', opacity: '0.7' }}>
