@@ -73,7 +73,7 @@ export default function Header() {
           <Link to="/success">Success Stories</Link>
           <Link to="/blog">Blogs</Link>
           <Link to="/contact">Contact Us</Link>
-          <a href="https://admin.krisnaivfgroup5.com/login" style={{ color: 'var(--brand-pink)' }}>Patient Login</a>
+          <a href="https://admin.krisnaivfgroup5.com/login" style={{ color: 'var(--brand-pink)' }}>Staff Login</a>
         </div>
       </div>
     </>
